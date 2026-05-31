@@ -1,0 +1,12 @@
+{
+  "name": "git-recap",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered weekly standups from GitHub commits",
+  "scripts": {
+    "generate:summary": "node scripts/generate-work-summary.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.0"
+  }
+}
