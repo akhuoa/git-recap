@@ -4,7 +4,7 @@ AI-powered weekly standups. Summarises active branches and commits using GitHub 
 
 ## Generate a work summary issue
 
-This repository includes a Node.js utility script at `/tmp/workspace/akhuoa/git-recap/scripts/generate-work-summary.js` that:
+This repository includes a Node.js utility script at `scripts/generate-work-summary.js` that:
 
 1. Collects commits from a configurable date range (default: last 7 days)
 2. Scans default branches and active, unmerged feature branches
@@ -26,7 +26,7 @@ The script reads `.emv` first (as requested), then `.env`, then existing shell e
 ### Install and run
 
 ```bash
-cd /tmp/workspace/akhuoa/git-recap
+cd path/to/git-recap
 npm install
 npm run generate:summary -- \
   --repos '[{"owner":"user","repo":"repo-1"}]' \
